@@ -42,5 +42,34 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 let navItems = document.querySelectorAll('nav a');
+navItems.forEach((item)=> {
+  item.style.color = 'black';
+})
 
- 
+navItems[0].textContent = siteContent.nav['nav-item-1'];
+navItems[1].textContent = siteContent.nav['nav-item-2'];
+navItems[2].textContent = siteContent.nav['nav-item-3'];
+navItems[3].textContent = siteContent.nav['nav-item-4'];
+navItems[4].textContent = siteContent.nav['nav-item-5'];
+navItems[5].textContent = siteContent.nav['nav-item-6'];
+
+let ctaText = document.querySelector('h1');
+ctaText.textContent = siteContent.cta['h1'];
+
+let ctaImg = document.getElementById('cta-img');
+ctaImg.src = 'img/header-img.png';
+
+let ctaButton = document.querySelector('button');
+ctaButton.textContent = siteContent.cta['button'];
+
+let middleImg = document.getElementById('middle-img');
+middleImg.src = 'img/mid-page-accent.jpg';
+
+let featuresHeader = document.querySelector('.top-content .text-content h4');
+featuresHeader.textContent = siteContent["main-content"]['features-h4'];
+ featuresHeader.style.color = 'black';
+ featuresHeader.style.fontSize = '1.5rem';
+
+ let featuresText = document.querySelector('.top-content .text-content p');
+ featurestext.textContent = siteContent["main-content"]['features-content'];
+
