@@ -43,7 +43,7 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 let navItems = document.querySelectorAll('nav a');
 navItems.forEach((item)=> {
-  item.style.color = 'black';
+  item.style.color = 'green';
 })
 
 navItems[0].textContent = siteContent.nav['nav-item-1'];
@@ -52,6 +52,18 @@ navItems[2].textContent = siteContent.nav['nav-item-3'];
 navItems[3].textContent = siteContent.nav['nav-item-4'];
 navItems[4].textContent = siteContent.nav['nav-item-5'];
 navItems[5].textContent = siteContent.nav['nav-item-6'];
+
+const homeLink = document.createElement('a');
+homeLink.textContent = 'Home';
+homeLink.style.color ='green';
+
+const myLink = document.createElement('a');
+myLink.textContent = 'NotYourSyn';
+myLink.style.color ='red';
+
+const newNav = document.querySelector('nav');
+newNav.prepend(homeLink);
+newNav.append(myLink);
 
 let ctaText = document.querySelector('h1');
 ctaText.textContent = siteContent.cta['h1'];
@@ -120,6 +132,22 @@ let visionText = document.querySelector('.bottom-content .text-content ~ :last-c
 visionText.textContent = siteContent["main-content"]['vision-content'];
 visionText.style.color = 'black';
 visionText.style.fontSize = '.75rem';
+
+let contactHeader = document.querySelector('.contact h4');
+contactHeader.textContent = siteContent['contact']['contact-h4'];
+
+let contactAdd = document.querySelector('.contact p');
+contactAdd.textContent = siteContent['contact']['address'];
+
+let contactPhn = document.querySelector('.contact p ~p');
+contactPhn.textContent = siteContent['contact']['phone'];
+
+let contactEmail = document.querySelector('.contact :last-child');
+contactEmail.textContent = siteContent['contact']['email'];
+
+let copyright = document.querySelector('footer p');
+copyright.textContent = siteContent['footer']['copyright'];
+
 
 
 
