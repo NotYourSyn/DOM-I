@@ -40,6 +40,7 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.style.backgroundColor ='white'
 
 let navItems = document.querySelectorAll('nav a');
 navItems.forEach((item)=> {
@@ -55,7 +56,7 @@ navItems[5].textContent = siteContent.nav['nav-item-6'];
 
 const homeLink = document.createElement('a');
 homeLink.textContent = 'Home';
-homeLink.style.color ='green';
+homeLink.style.color ='red';
 
 const myLink = document.createElement('a');
 myLink.textContent = 'NotYourSyn';
@@ -80,22 +81,18 @@ middleImg.src = 'img/mid-page-accent.jpg';
 
 let featuresHeader = document.querySelector('.top-content .text-content h4');
 featuresHeader.textContent = siteContent["main-content"]['features-h4'];
- featuresHeader.style.color = 'black';
  featuresHeader.style.fontSize = '1.5rem';
 
  let featuresText = document.querySelector('.top-content .text-content p');
  featuresText.textContent = siteContent["main-content"]['features-content'];
- featuresText.style.color = 'black';
  featuresText.style.fontSize = '.75rem';
 
  let aboutHeader = document.querySelector('.top-content .text-content ~.text-content h4');
  aboutHeader.textContent = siteContent["main-content"]['about-h4'];
- aboutHeader.style.color = 'black';
  aboutHeader.style.fontSize = '1.5rem';
  
 let aboutText = document.querySelector('.top-content .text-content ~ .text-content p');
 aboutText.textContent = siteContent["main-content"]['about-content'];
-aboutText.style.color = 'black';
 aboutText.style.fontSize = '.75rem';
 
 let topContent = document.querySelector('.top-content')
@@ -104,33 +101,27 @@ topContent.style.marginLeft = '10px';
 
 let servicesHeader = document.querySelector('.bottom-content .text-content h4');
 servicesHeader.textContent = siteContent["main-content"]['services-h4'];
- servicesHeader.style.color = 'black';
  servicesHeader.style.fontSize = '1.5rem';
 
  let servicesText = document.querySelector('.bottom-content .text-content p');
  servicesText.textContent = siteContent["main-content"]['services-content'];
- servicesText.style.color = 'black';
  servicesText.style.fontSize = '.75rem';
 
  let productHeader = document.querySelector('.bottom-content .text-content ~.text-content h4');
  productHeader.textContent = siteContent["main-content"]['product-h4'];
- productHeader.style.color = 'black';
  productHeader.style.fontSize = '1.5rem';
  
 let productText = document.querySelector('.bottom-content .text-content ~ .text-content p');
 productText.textContent = siteContent["main-content"]['product-content'];
-productText.style.color = 'black';
 productText.style.fontSize = '.75rem';
 
 
 let visionHeader = document.querySelector('.bottom-content .text-content ~:last-child h4');
 visionHeader.textContent = siteContent["main-content"]['vision-h4'];
-visionHeader.style.color = 'black';
 visionHeader.style.fontSize = '1.5rem';
 
 let visionText = document.querySelector('.bottom-content .text-content ~ :last-child p');
 visionText.textContent = siteContent["main-content"]['vision-content'];
-visionText.style.color = 'black';
 visionText.style.fontSize = '.75rem';
 
 let contactHeader = document.querySelector('.contact h4');
@@ -147,6 +138,14 @@ contactEmail.textContent = siteContent['contact']['email'];
 
 let copyright = document.querySelector('footer p');
 copyright.textContent = siteContent['footer']['copyright'];
+
+//Stretch 1 --- play with styling //
+
+// let mainContainer = document.querySelector('.container');
+// mainContainer.style.backgroundColor ='black';
+// mainContainer.style.color ='white';
+// mainContainer.style.padding ='20px';
+// mainContainer.style.width ='1025px';
 
 
 
