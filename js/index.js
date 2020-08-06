@@ -141,12 +141,27 @@ copyright.textContent = siteContent['footer']['copyright'];
 
 //Stretch 1 --- play with styling //
 
-// let mainContainer = document.querySelector('.container');
-// mainContainer.style.backgroundColor ='black';
-// mainContainer.style.color ='white';
-// mainContainer.style.padding ='20px';
-// mainContainer.style.width ='1025px';
+let mainContainer = document.querySelector('.container');
+mainContainer.style.backgroundColor ='black';
+mainContainer.style.color ='white';
+mainContainer.style.padding ='20px';
+mainContainer.style.width ='1025px';
 
+const newDiv = document.createElement('div');
+newDiv.textContent = 'my new Div to practice with';
+newDiv.style.color = 'red';
+newDiv.style.padding = '2rem';
+newDiv.style.justifyContent = 'center';
+newDiv.style.alignItems = 'center';
 
+//  const contactSection = document.querySelector('.contact');
+//  contactSection.prepend(newDiv);
 
+const mainStuff = document.querySelector('.main-content');
+mainStuff.append(newDiv);
+
+const hr = document.createElement('hr');
+newDiv.prepend(hr);
+
+hr.style.margin = '50px';
 
