@@ -154,8 +154,8 @@ newDiv.style.padding = '2rem';
 newDiv.style.justifyContent = 'center';
 newDiv.style.alignItems = 'center';
 
-//  const contactSection = document.querySelector('.contact');
-//  contactSection.prepend(newDiv);
+ const contactSection = document.querySelector('.contact');
+ contactSection.prepend(newDiv);
 
 const mainStuff = document.querySelector('.main-content');
 mainStuff.append(newDiv);
