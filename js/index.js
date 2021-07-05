@@ -40,3 +40,128 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.style.backgroundColor ='white'
+
+let navItems = document.querySelectorAll('nav a');
+navItems.forEach((item)=> {
+  item.style.color = 'green';
+})
+
+navItems[0].textContent = siteContent.nav['nav-item-1'];
+navItems[1].textContent = siteContent.nav['nav-item-2'];
+navItems[2].textContent = siteContent.nav['nav-item-3'];
+navItems[3].textContent = siteContent.nav['nav-item-4'];
+navItems[4].textContent = siteContent.nav['nav-item-5'];
+navItems[5].textContent = siteContent.nav['nav-item-6'];
+
+const homeLink = document.createElement('a');
+homeLink.textContent = 'Home';
+homeLink.style.color ='red';
+
+const myLink = document.createElement('a');
+myLink.textContent = 'NotYourSyn';
+myLink.style.color ='red';
+
+const newNav = document.querySelector('nav');
+newNav.prepend(homeLink);
+newNav.append(myLink);
+
+let ctaText = document.querySelector('h1');
+ctaText.textContent = siteContent.cta['h1'];
+
+let ctaImg = document.getElementById('cta-img');
+ctaImg.src = 'img/header-img.png';
+
+let ctaButton = document.querySelector('button');
+ctaButton.textContent = siteContent.cta['button'];
+
+let middleImg = document.getElementById('middle-img');
+middleImg.src = 'img/mid-page-accent.jpg';
+
+
+let featuresHeader = document.querySelector('.top-content .text-content h4');
+featuresHeader.textContent = siteContent["main-content"]['features-h4'];
+ featuresHeader.style.fontSize = '1.5rem';
+
+ let featuresText = document.querySelector('.top-content .text-content p');
+ featuresText.textContent = siteContent["main-content"]['features-content'];
+ featuresText.style.fontSize = '.75rem';
+
+ let aboutHeader = document.querySelector('.top-content .text-content ~.text-content h4');
+ aboutHeader.textContent = siteContent["main-content"]['about-h4'];
+ aboutHeader.style.fontSize = '1.5rem';
+ 
+let aboutText = document.querySelector('.top-content .text-content ~ .text-content p');
+aboutText.textContent = siteContent["main-content"]['about-content'];
+aboutText.style.fontSize = '.75rem';
+
+let topContent = document.querySelector('.top-content')
+topContent.style.marginRight = '20px';
+topContent.style.marginLeft = '10px';
+
+let servicesHeader = document.querySelector('.bottom-content .text-content h4');
+servicesHeader.textContent = siteContent["main-content"]['services-h4'];
+ servicesHeader.style.fontSize = '1.5rem';
+
+ let servicesText = document.querySelector('.bottom-content .text-content p');
+ servicesText.textContent = siteContent["main-content"]['services-content'];
+ servicesText.style.fontSize = '.75rem';
+
+ let productHeader = document.querySelector('.bottom-content .text-content ~.text-content h4');
+ productHeader.textContent = siteContent["main-content"]['product-h4'];
+ productHeader.style.fontSize = '1.5rem';
+ 
+let productText = document.querySelector('.bottom-content .text-content ~ .text-content p');
+productText.textContent = siteContent["main-content"]['product-content'];
+productText.style.fontSize = '.75rem';
+
+
+let visionHeader = document.querySelector('.bottom-content .text-content ~:last-child h4');
+visionHeader.textContent = siteContent["main-content"]['vision-h4'];
+visionHeader.style.fontSize = '1.5rem';
+
+let visionText = document.querySelector('.bottom-content .text-content ~ :last-child p');
+visionText.textContent = siteContent["main-content"]['vision-content'];
+visionText.style.fontSize = '.75rem';
+
+let contactHeader = document.querySelector('.contact h4');
+contactHeader.textContent = siteContent['contact']['contact-h4'];
+
+let contactAdd = document.querySelector('.contact p');
+contactAdd.textContent = siteContent['contact']['address'];
+
+let contactPhn = document.querySelector('.contact p ~p');
+contactPhn.textContent = siteContent['contact']['phone'];
+
+let contactEmail = document.querySelector('.contact :last-child');
+contactEmail.textContent = siteContent['contact']['email'];
+
+let copyright = document.querySelector('footer p');
+copyright.textContent = siteContent['footer']['copyright'];
+
+//Stretch 1 --- play with styling //
+
+let mainContainer = document.querySelector('.container');
+mainContainer.style.backgroundColor ='black';
+mainContainer.style.color ='white';
+mainContainer.style.padding ='20px';
+mainContainer.style.width ='1025px';
+
+const newDiv = document.createElement('div');
+newDiv.textContent = 'my new Div to practice with';
+newDiv.style.color = 'red';
+newDiv.style.padding = '2rem';
+newDiv.style.justifyContent = 'center';
+newDiv.style.alignItems = 'center';
+
+ const contactSection = document.querySelector('.contact');
+ contactSection.prepend(newDiv);
+
+const mainStuff = document.querySelector('.main-content');
+mainStuff.append(newDiv);
+
+const hr = document.createElement('hr');
+newDiv.prepend(hr);
+
+hr.style.margin = '50px';
+
